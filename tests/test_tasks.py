@@ -2,10 +2,9 @@
 import os
 import unittest
 
-from views import app,db
-from _config import basedir
-from models import User
-from testing_helper import create_task, create_user, logout, login, register, create_admin_user
+from project import app,db
+from project._config import basedir
+from tests.testing_helper import create_task, create_user, logout, login, register, create_admin_user
 
 TEST_DB = 'test.db'
 
@@ -15,9 +14,13 @@ class TestTasks(unittest.TestCase):
     def setUp(self):
         app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
+        app.config['DEBUG'] = False
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, TEST_DB)
         self.app = app.test_client()
         db.create_all()
+
+        self.assertEquals(app.debug, False)
+
         register(self, 'Micheal', 'michael@realpython.com', 'python', 'python')
         login(self, 'Micheal', 'python')
 

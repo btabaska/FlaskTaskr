@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Welcome to FlaskTaskr!!!</title>
+    <title>Welcome to MASMini!!!</title>
     <!-- styles -->
     <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">FlaskTaskr</a>
+          <a class="navbar-brand" href="/">MiniMAS</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -32,6 +32,11 @@
               <li><a href="/logout">Signout</a></li>
             {% endif %}
           </ul>
+          {% if session.logged_in %}
+          <ul class="nav navbar-nav navbar-right">
+            <li><a>Welcome, {{username}}.</a></li>
+          </ul>
+          {% endif %}
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -53,7 +58,7 @@
       </div>
       <div class="footer">
         <hr>
-        <p>&copy; <a href="https://www.realpython.com">Real Python</a></p>
+        <p><a href="https://www.mas.nasa.gov">MAS Mini</a></p>
       </div>
     </div><!-- /.container -->
 
