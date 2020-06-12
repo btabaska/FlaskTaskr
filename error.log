@@ -2,3 +2,7 @@
 500 error at 12-06-202014:58:53: http://localhost:5000/does_not_exist
 500 error at 12-06-202014:58:53: http://localhost:5000/favicon.ico
 500 error at 12-06-202014:59:34: http://localhost:5000/does_not_exist
+500 error at 12-06-202016:35:57: http://localhost/this-route-does-not-exist/
+500 error at 12-06-202016:37:51: http://localhost/this-route-does-not-exist/
+500 error at 12-06-202016:48:32: http://localhost/this-route-does-not-exist/
+500 error at 12-06-202016:54:43: http://localhost/this-route-does-not-exist/
