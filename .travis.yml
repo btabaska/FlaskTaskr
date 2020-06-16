@@ -1,16 +1,16 @@
-# specify language
 language:
-  - python
-
-#specify python versions
+- python
 python:
-  - "3.7"
-
-#install dependencies
+- '3.7'
 install:
-  - pip install -r requirements.txt
-
-#run tests
+- pip install -r requirements.txt
 script:
-  - nosetests
-
+- nosetests
+deploy:
+  provider: heroku
+  api_key:
+    secure: b7RtPDJDca+N884hEh7LQxjpPaTsHKpD8CU4bm3xnw6lDt4RpKxTzBra9eNfB1jnRRJI+Y2GOgHtggimH8+MyKFKhuVcz65ntG6JCdHDygmSKebfAYoz/y6N+ZztLPMxodTlRSM3ZtNkQBxCbDlmMcKm2b4rqzHzQz0Q1rY8aO42peJF4T+/86pSJZFRPwGfKNbWu3upw7zJGvTXfDArydJYnhTyu2ZT/PfDgsnA6e8+9uNheRQ4cjnuqIfAidAi487EKpVONgXvPm4b6FcClZ2Wv1V8tM3kdwnGcaRpnHpWe2lAwQM+ow2ykCKxc/VbceZeIJHqwkt+NDEQSjmDXK5AFR4XZgn/B77bgCtoYm4h5AV8zrqKTQSv4dNfiukxSWzYHG2CYWXkyvLsEOlre9pu4FZTvOgEgrEnz+Ee6ZonXVDSVZFwEgyJkNPtlFghKHeT/RxKCSF9d06XhCOkg9GhWSxrWpR2/pLSlysE6tjnjS43aHOWdY92DOODHyDwsvTnjqfdMUCZVvz1MpwTcnjlLgmztWTPGtU44RPoEoCKYVp9uZbcentXN7QBc1xvqkIYqFnNEQxRawwz2YI+RP92KlMj7Z9Kq3TWGsDd9YnNTKfPtkwRLYeYARWsHbcmIMSq0h7wKpa+nW5nG0i3fFjrqIH2XpcrmoebgaNcpPg=
+  app: minimas
+  on:
+    repo: btabaska/FlaskTaskr
+  skip_cleanup: 'true'
