@@ -17,3 +17,4 @@
 500 error at 16-06-202013:39:49: http://localhost/this-route-does-not-exist/
 500 error at 16-06-202016:17:06: http://localhost/this-route-does-not-exist/
 500 error at 16-06-202016:21:13: http://localhost/this-route-does-not-exist/
+500 error at 16-06-202016:24:25: http://localhost/this-route-does-not-exist/
