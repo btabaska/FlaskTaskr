@@ -28,13 +28,13 @@ def rollback():
     local("heroku rollback")
 
 def prepare():
-    test()
+    #test()
     commit()
     push()
 
 def deploy():
     pull()
-    test()
+    #test()
     commit()
     heroku()
     heroku_test()
