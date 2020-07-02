@@ -13,5 +13,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/project/flasktaskr.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="flasktaskr" uuid="d1adf24b-e7a0-40da-b0b9-05247f2519ae">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/project/flasktaskr.db</jdbc-url>
+    </data-source>
   </component>
 </project>
