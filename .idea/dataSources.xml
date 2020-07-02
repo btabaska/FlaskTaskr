@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/project/test.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="flasktaskr" uuid="08286bd4-a012-4f9c-a414-6fcb7324a76d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/project/flasktaskr.db</jdbc-url>
+    </data-source>
   </component>
 </project>
